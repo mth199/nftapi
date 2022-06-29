@@ -16,7 +16,7 @@ express.urlencoded({
 app.use(express.json())
 
 //rotas da API
-const nftRoutes = require('./routes/nftRoutes')
+const nftRoutes = require('../routes/nftRoutes')
 
 app.use('/nft', nftRoutes)
 
