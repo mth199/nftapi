@@ -1,4 +1,5 @@
 // config inicial
+require('dotenv').config()
 const express = require ('express')
 const app = express()
 
@@ -29,4 +30,4 @@ res.json({message: 'Oi Express!'})
 
 // entregar uma porta
 
-app.listen(3000)
+app.listen(process.env.PORT||3000)
